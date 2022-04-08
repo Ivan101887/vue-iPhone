@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.container {
+  max-width: 900px;
+}
+.mx {
+  &-auto {
+    margin: {
+      left: auto;
+      right: auto;
+    };
+  }
+}
+.d {
+  &-flex {
+    display: flex;
+    &--reverse {
+      flex: {
+        direction: row-reverse;
+      }
+    }
+  }
+}
+
+

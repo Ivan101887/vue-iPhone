@@ -1,28 +1,38 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+	<div id="app">
+		<header class="header">
+			<h1 class="header__title">iPhone 機型</h1>
+		</header>
+    <main class="main container mx-auto">
+      <Commodities />
+    </main>
+	</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+  import Commodities from '@/components/Commodities'
+	export default {
+		name: "App",
+		components: {
+      Commodities,
+    },
+	};
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+	.header {
+    padding: {
+      top: 48px;
+      bottom: 48px;
+    };
+    text: {
+      align: center;
+    };
+    &__title {
+      font: {
+        size: 3rem;
+        weight: 600;
+      };
+    }
+  }
 </style>
