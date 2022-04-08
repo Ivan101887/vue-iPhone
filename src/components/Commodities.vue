@@ -2,7 +2,7 @@
 	<div class="shopItems">
 		<IPhone 
       v-for="(item, index) in data" :key="index" 
-      :class="[ index % 2 ===0 ? 'd-flex' : 'd-flex d-flex--reverse']"
+      :class="[ index % 2 === 0 ? 'd-flex' : 'd-flex d-flex--reverse']"
       :parent-data="item" 
     >{{item}}</IPhone>
 	</div>
