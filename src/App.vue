@@ -4,17 +4,17 @@
 			<h1 class="header__title">iPhone 機型</h1>
 		</header>
     <main class="main container mx-auto">
-      <Commodities />
+      <Product />
     </main>
 	</div>
 </template>
 
 <script>
-  import Commodities from '@/components/Commodities'
+  import Product from '@/components/Product'
 	export default {
 		name: "App",
 		components: {
-      Commodities,
+      Product,
     },
 	};
 </script>
@@ -31,7 +31,7 @@
     &__title {
       font: {
         size: 3rem;
-        weight: 600;
+        weight: 700;
       };
     }
   }
