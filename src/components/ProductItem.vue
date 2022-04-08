@@ -1,5 +1,5 @@
 <template>
-	<section class="productItem">
+	<section>
 		<div class="productItem__info">
 			<h2 class="productItem__name">{{ parentData.name }}</h2>
 			<p class="productItem__pubYear">
